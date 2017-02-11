@@ -10,11 +10,8 @@ body {
   display: flex;
   -webkit-transform: translateX();
           transform: translateX();
-  background-image: url('../images/bg.png');
+  background: url('../images/bg.png') no-repeat center center fixed;
   color: white;
-  /*background: #08ba88;
-  background: linear-gradient(to bottom, #08ba88 0%, #e3bc88 57%, #db9764 76%, #b1695a 93%, #732207 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08ba88', endColorstr='#732207', GradientType=0 ); */
 }
 
 /* landscape */
@@ -53,7 +50,7 @@ body {
 .moon-sun {
   width: 100px;
   height: 100px;
-  background: url('../images/sun-moon.png');
+  background: rgb(201, 169, 87);
   border-radius: 50px;
   z-index: 10;
   position: relative;
@@ -61,10 +58,11 @@ body {
   right: 300px;
 }
 
+
 .moon-one {
-  width: 20px;
-  height: 20px;
-  background: url('../images/moon-one.png');
+  width: 35px;
+  height: 35px;
+  background: rgb(212, 109, 48);
   border-radius: 50px;
   z-index: -1;
   position: relative;
@@ -76,7 +74,7 @@ body {
 .moon-two {
   width: 20px;
   height: 20px;
-  background: url('../images/moon-two.png');
+  background: rgb(188, 209, 213);
   border-radius: 50px;
   z-index: -1;
   position: relative;
