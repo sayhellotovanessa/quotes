@@ -1,0 +1,30 @@
+{
+  "name": "dune_quotes",
+  "version": "1.0.0",
+  "description": "a text generator with Dune book quotes, by Frank Herbert.",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@nessoila",
+  "license": "ISC",
+  "dependencies": {
+    "clipboard": "^1.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^6.3.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-watch": "^4.3.11",
+    "gulp-watch-task": "^0.3.0",
+    "lost": "^8.0.0",
+    "postcss-font-magician": "^1.6.0",
+    "postcss-media-minmax": "^2.1.2",
+    "postcss-scss": "^0.4.0",
+    "postcss-short": "^3.0.3",
+    "postcss-short-color": "^2.0.1",
+    "precss": "^1.4.0"
+  }
+}

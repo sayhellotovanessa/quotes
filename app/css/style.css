@@ -1,0 +1,287 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Megrim|Roboto');
+
+/*  bg animation    */
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX();
+          transform: translateX();
+  background: #08ba88;
+  background: -webkit-linear-gradient(top, #08ba88 0%, #e3bc88 57%, #db9764 76%, #b1695a 93%, #732207 100%);
+  background: linear-gradient(to bottom, #08ba88 0%, #e3bc88 57%, #db9764 76%, #b1695a 93%, #732207 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08ba88', endColorstr='#732207', GradientType=0 );
+}
+
+/* landscape */
+
+.landscape {
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.dune {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid #644749;
+  margin-left: 0;
+ display: -webkit-inline-box;
+ display: -ms-inline-flexbox;
+ display: inline-flex;
+}
+
+.big-dune {
+  width: 0;
+  height: 0;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  border-bottom: 100px solid #644749;
+  margin-left: 0;
+ display: -webkit-inline-box;
+ display: -ms-inline-flexbox;
+ display: inline-flex;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  background: rgb(241, 232, 108);
+  border-radius: 50px;
+  z-index: -1;
+  position: relative;
+  top: 20px;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  background: rgb(241, 232, 108);
+  border-radius: 50px;
+  z-index: -1;
+  position: relative;
+  margin: 0;
+  top: -120px;
+  float: right;
+  right: 1000px;
+}
+
+
+
+/*   elements   */
+
+
+.links {
+  max-width: 1/2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.links:before{
+  content: '';
+  display: table;
+}
+
+
+.links:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.wrap {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrap:before{
+  content: '';
+  display: table;
+}
+
+.wrap:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+.content:before{
+  content: '';
+  display: table;
+}
+
+.content:after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+p#quoteDisplay {
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Megrim', cursive;
+  font-size: 45px;
+}
+
+p {
+  font-family: 'Roboto';
+  text-align: center;
+  color: #732207;
+}
+
+section {
+  position: relative;
+}
+
+.btn {
+  margin: 30px 40%;
+  border: 2px solid white;
+  font-family: 'Roboto';
+  color: white;
+  background-color: transparent;
+  height: 40px;
+}
+
+.btn:hover {
+  color: #732207;
+  background-color: white;
+}
+
+button {
+
+}
+
+/* screen */
+
+.screen {
+  margin: 20px 10px;
+  background: gray;
+  border-radius: 50% / 10%;
+  height: 250px;
+  width: auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.screen:before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  bottom: 15%;
+  right: -5%;
+  left: -5%;
+  background: rgba(255,0,0,.25);
+  border-radius: 5% / 50%;
+
+
+}
+
+/*  responsive  */
+
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .content {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .content:before{
+    content: '';
+    display: table;
+  }
+  .content:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #quoteDisplay {
+    width: 100%;
+  }
+  .btn {
+    margin-left: 30%;
+  }
+  .dune {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #644749;
+    margin-left: 0;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+
+
+  }
+
+  .big-dune {
+    width: 0;
+    height: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 50px solid #644749;
+    margin-left: 0;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  .dune {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 70px solid #644749;
+    margin-left: 0;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+
+
+  }
+
+  .big-dune {
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 90px solid transparent;
+    border-bottom: 70px solid #644749;
+    margin-left: 0;
+   display: -webkit-inline-box;
+   display: -ms-inline-flexbox;
+   display: inline-flex;
+
+  }
+
+
+}

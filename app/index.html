@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bg.css">
+
+    <title>Dune Quote</title>
+  </head>
+  <body>
+
+    <div class="wrap">
+      <div class="content">
+        <header>
+          <h1>Dune Quotes</h1>
+          <p>Here you can generate random quotes from the book Dune, by Frank Herbert.</p>
+        </header>
+        <section>
+          <button onclick="newQuote()" class="btn">New Quote</button>
+          <div class="screen">
+            <p id="quoteDisplay">lalalal</p>
+          </div>
+          <button type="button" class="btn" data-clipboard-action="copy" data-clipboard-target="#quoteDisplay">Copy quote</button>
+        </section>
+
+        <section>
+          <h2>Credits</h2>
+          <p>You can find the source code <a href="#">here.</a></p>
+        </section>
+      </div>
+      <div class="landscape">
+        <div class="sun"></div>
+        <div class="dune"></div>
+        <div class="big-dune"></div>
+        <div class="dune"></div>
+        <div class="moon"></div>
+
+
+      </div>
+
+    </div>
+    <script src="js/javascript.js"></script>
+    <script src="js/content.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.6.0/clipboard.min.js"></script>
+
+    <script type="text/javascript">
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    new Clipboard('.btn');
+    </script>
+  </body>
+</html>
