@@ -28,6 +28,7 @@ body {
   border-bottom: 100px solid #644749;
   margin-left: 0;
  display: inline-flex;
+ transform: translateY(10px);
 }
 
 .big-dune {
@@ -48,8 +49,17 @@ body {
   position: relative;
   top: -850px;
   right: 300px;
+  animation: move-sun 2s 1 forwards;
 }
 
+@keyframes move-sun {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
+}
 
 .moon-one {
   size: 35px;
@@ -62,7 +72,18 @@ body {
   margin: 0;
   top: -780px;
   right: 200px;
+  animation: move-moon-one 3s 1 forwards;
 }
+
+@keyframes move-moon-one {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-20px, -50px);
+  }
+}
+
 
 .moon-two {
   size: 20px;

@@ -33,6 +33,8 @@ body {
  display: -webkit-inline-box;
  display: -ms-inline-flexbox;
  display: inline-flex;
+ -webkit-transform: translateY(10px);
+         transform: translateY(10px);
 }
 
 .big-dune {
@@ -56,8 +58,31 @@ body {
   position: relative;
   top: -850px;
   right: 300px;
+  -webkit-animation: move-sun 2s 1 forwards;
+          animation: move-sun 2s 1 forwards;
 }
 
+@-webkit-keyframes move-sun {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(20px, 20px);
+            transform: translate(20px, 20px);
+  }
+}
+
+@keyframes move-sun {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(20px, 20px);
+            transform: translate(20px, 20px);
+  }
+}
 
 .moon-one {
   width: 35px;
@@ -69,7 +94,32 @@ body {
   margin: 0;
   top: -780px;
   right: 200px;
+  -webkit-animation: move-moon-one 3s 1 forwards;
+          animation: move-moon-one 3s 1 forwards;
 }
+
+@-webkit-keyframes move-moon-one {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-20px, -50px);
+            transform: translate(-20px, -50px);
+  }
+}
+
+@keyframes move-moon-one {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-20px, -50px);
+            transform: translate(-20px, -50px);
+  }
+}
+
 
 .moon-two {
   width: 20px;
