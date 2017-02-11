@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Megrim|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Megrim|Muli');
 
 /*  bg animation    */
 
@@ -10,10 +10,11 @@ body {
   display: flex;
   -webkit-transform: translateX();
           transform: translateX();
-  background: #08ba88;
-  background: -webkit-linear-gradient(top, #08ba88 0%, #e3bc88 57%, #db9764 76%, #b1695a 93%, #732207 100%);
+  background-image: url('../images/bg.png');
+  color: white;
+  /*background: #08ba88;
   background: linear-gradient(to bottom, #08ba88 0%, #e3bc88 57%, #db9764 76%, #b1695a 93%, #732207 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08ba88', endColorstr='#732207', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08ba88', endColorstr='#732207', GradientType=0 ); */
 }
 
 /* landscape */
@@ -49,27 +50,39 @@ body {
  display: inline-flex;
 }
 
-.sun {
+.moon-sun {
   width: 100px;
   height: 100px;
-  background: rgb(241, 232, 108);
+  background: url('../images/sun-moon.png');
   border-radius: 50px;
-  z-index: -1;
+  z-index: 10;
   position: relative;
-  top: 20px;
+  top: -850px;
+  right: 300px;
 }
 
-.moon {
+.moon-one {
   width: 20px;
   height: 20px;
-  background: rgb(241, 232, 108);
+  background: url('../images/moon-one.png');
   border-radius: 50px;
   z-index: -1;
   position: relative;
   margin: 0;
-  top: -120px;
-  float: right;
-  right: 1000px;
+  top: -780px;
+  right: 200px;
+}
+
+.moon-two {
+  width: 20px;
+  height: 20px;
+  background: url('../images/moon-two.png');
+  border-radius: 50px;
+  z-index: -1;
+  position: relative;
+  margin: 0;
+  top: -980px;
+  right: 300px;
 }
 
 
@@ -132,20 +145,24 @@ body {
 }
 
 p#quoteDisplay {
+  z-index: 5;
 }
 
 
 h1, h2, h3 {
   text-align: center;
-  color: white;
   font-family: 'Megrim', cursive;
   font-size: 45px;
 }
 
 p {
-  font-family: 'Roboto';
+  font-family: 'Muli';
   text-align: center;
-  color: #732207;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 section {
@@ -155,7 +172,7 @@ section {
 .btn {
   margin: 30px 40%;
   border: 2px solid white;
-  font-family: 'Roboto';
+  font-family: 'Muli';
   color: white;
   background-color: transparent;
   height: 40px;
@@ -174,27 +191,19 @@ button {
 
 .screen {
   margin: 20px 10px;
-  background: gray;
+  background: -webkit-linear-gradient(left,rgba(125, 130, 126, 0.35) ,rgba(241, 237, 231, 0.48) );
+  background: linear-gradient(left,rgba(125, 130, 126, 0.35) ,rgba(241, 237, 231, 0.48) );
   border-radius: 50% / 10%;
   height: 250px;
   width: auto;
   padding: 10px;
   text-align: center;
-
+  z-index: 4;
+ border: 20px solid rgba(20, 15, 17, 0.55);
 }
 
-.screen:before {
-  content: "";
-  position: absolute;
-  top: 15%;
-  bottom: 15%;
-  right: -5%;
-  left: -5%;
-  background: rgba(255,0,0,.25);
-  border-radius: 5% / 50%;
 
 
-}
 
 /*  responsive  */
 
