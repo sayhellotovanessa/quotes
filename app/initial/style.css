@@ -20,26 +20,7 @@ body {
   text-align: center;
 }
 
-.dune {
-  width: 0;
-  height: 0;
-  border-left: 150px solid transparent;
-  border-right: 150px solid transparent;
-  border-bottom: 100px solid #644749;
-  margin-left: 0;
- display: inline-flex;
- transform: translateY(10px);
-}
 
-.big-dune {
-  width: 0;
-  height: 0;
-  border-left: 250px solid transparent;
-  border-right: 250px solid transparent;
-  border-bottom: 100px solid #644749;
-  margin-left: 0;
- display: inline-flex;
-}
 
 .moon-sun {
   size: 100px;
@@ -47,9 +28,9 @@ body {
   border-radius: 50px;
   z-index: 10;
   position: relative;
-  top: -850px;
-  right: 300px;
-  animation: move-sun 2s 1 forwards;
+  top: -950px;
+  right: 320px;
+  animation: move-sun 6s 1 forwards;
 }
 
 @keyframes move-sun {
@@ -57,7 +38,7 @@ body {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(20px, 20px);
+    transform: translate(60px, 100px);
   }
 }
 
@@ -70,9 +51,9 @@ body {
   z-index: -1;
   position: relative;
   margin: 0;
-  top: -780px;
-  right: 200px;
-  animation: move-moon-one 3s 1 forwards;
+  top: -580px;
+  right: -100px;
+  animation: move-moon-one 6s 1 forwards;
 }
 
 @keyframes move-moon-one {
@@ -80,7 +61,7 @@ body {
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(-20px, -50px);
+    transform: translate(-300px, -250px);
   }
 }
 
@@ -94,7 +75,7 @@ body {
   z-index: -1;
   position: relative;
   margin: 0;
-  top: -980px;
+  bottom: 995px;
   right: 300px;
 }
 
@@ -193,55 +174,5 @@ button {
   .btn {
     margin-left: 30%;
   }
-  .dune {
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 50px solid #644749;
-    margin-left: 0;
-   display: inline-flex;
-
-
-  }
-
-  .big-dune {
-    width: 0;
-    height: 0;
-    border-left: 45px solid transparent;
-    border-right: 45px solid transparent;
-    border-bottom: 50px solid #644749;
-    margin-left: 0;
-   display: inline-flex;
-
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-
-  .dune {
-    width: 0;
-    height: 0;
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-bottom: 70px solid #644749;
-    margin-left: 0;
-   display: inline-flex;
-
-
-  }
-
-  .big-dune {
-    width: 0;
-    height: 0;
-    border-left: 90px solid transparent;
-    border-right: 90px solid transparent;
-    border-bottom: 70px solid #644749;
-    margin-left: 0;
-   display: inline-flex;
-
-  }
-
 
 }
