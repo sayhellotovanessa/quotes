@@ -7,7 +7,7 @@
 body {
   display: flex;
   transform: translateX();
-  background: url('../images/bg.png') no-repeat center center fixed;
+  background: rgb(81, 17, 126) url('../images/bg.png') no-repeat center center fixed;
   color: white;
 }
 
