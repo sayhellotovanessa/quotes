@@ -118,6 +118,7 @@ body {
 
 p#quoteDisplay {
   z-index: 5;
+  max-width: 500px;
 }
 
 
@@ -161,7 +162,7 @@ button {
 
 .screen {
   margin: 20px 10px;
-  background: linear-gradient(left,rgba(125, 130, 126, 0.35) ,rgba(241, 237, 231, 0.48) );
+  background: linear-gradient(to left,rgba(125, 130, 126, 0.35) ,rgba(241, 237, 231, 0.48) );
   border-radius: 50% / 10%;
   height: 250px;
   width: auto;
