@@ -1,4 +1,16 @@
-/* fonts */
+/* fonts
+
+@@font-face {
+  font-family: 'Megrim';
+  src: url('../fonts/Megrim.ttf'), format('truetype');
+}
+
+@@font-face {
+  font-family: 'Muli';
+  src: url('../fonts/Muli.ttf'), format('truetype');
+}
+
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Megrim|Muli');
 
@@ -10,14 +22,16 @@ body {
   display: flex;
   -webkit-transform: translateX();
           transform: translateX();
-  background: rgb(81, 17, 126) url('../images/bg.png') no-repeat center center fixed;
-  color: white;
+  background:url('../images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  marGin: 67px;
+
 }
 
 /* landscape */
 
 .landscape {
-
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -124,6 +138,7 @@ body {
 .links:before{
   content: '';
   display: table;
+
 }
 
 
@@ -131,6 +146,7 @@ body {
   content: '';
   display: table;
   clear: both;
+
 }
 
 .wrap {
@@ -142,12 +158,14 @@ body {
 .wrap:before{
   content: '';
   display: table;
+
 }
 
 .wrap:after{
   content: '';
   display: table;
   clear: both;
+
 }
 
 .content {
@@ -160,12 +178,14 @@ body {
 .content:before{
   content: '';
   display: table;
+
 }
 
 .content:after{
   content: '';
   display: table;
   clear: both;
+
 }
 
 p#quoteDisplay {
@@ -196,16 +216,16 @@ section {
 
 .btn {
   margin: 30px 40%;
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   font-family: 'Muli';
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   height: 50px;
 }
 
 .btn:hover {
-  color: #732207;
-  background-color: white;
+  color: rgb(115, 34, 7);
+  background-color: rgb(255, 255, 255);
 }
 
 button {
@@ -247,11 +267,13 @@ button {
   .content:before{
     content: '';
     display: table;
+
   }
   .content:after{
     content: '';
     display: table;
     clear: both;
+
   }
   #quoteDisplay {
     width: 100%;
